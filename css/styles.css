@@ -8,6 +8,7 @@
     --color-hover:#2196F3;
     --filter-background-color:#F5F4FA;
     --border-color:#ECECEC;
+    --icon-color:#AFB1B8;
 }
 
 /* Глобальные стили */
@@ -27,6 +28,10 @@ img {
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+svg {
+    fill: var(--icon-color);
 }
 
 body {
@@ -112,13 +117,38 @@ body {
 .link:hover,
 .link:focus,
 .link:active {
-    color: var(--color-hover)
+    color: var(--color-hover);
+    fill: var(--color-hover);
 }
+
+.icon-mailtel:hover,
+.icon-mailtel:focus,
+.icon-mailtel:active {
+    fill: var(--color-hover)
+}
+
+.icon-tel {
+    box-sizing: border-box;
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon-mail {
+    box-sizing: border-box;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
 .header-contacts-list {
     display: flex;
     padding: 0;
     margin-left: auto;
     gap: 50px;
+    align-items: center;
 }
 
 .contacts {
@@ -141,10 +171,18 @@ body {
     list-style: none;
 }
 
+
 /* Основной блок */
+.container.order {
+    width: 1600px;
+    height: 600px;
+    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .main-order {
-    background-color: var(--basic-footer-background-color);
+
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -179,7 +217,6 @@ body {
     border: none;
 }
 
-
 .style-list {
     list-style: none;
 }
@@ -204,6 +241,16 @@ body {
 }
 
 
+.better-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--filter-background-color);
+    margin-bottom: 30px;
+}
 
 .main-better-h2,
 .hidden-h1 {
@@ -252,6 +299,28 @@ body {
     margin: 0;
 }
 
+.style-list-social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.style-list-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+}
+
+.style-list-li:hover,
+.style-list-li:active {
+    background-color: var(--color-hover);
+    border-radius: 50%;
+}
+
 .main-work-list {
     display: flex;
     margin-top: 50px;
@@ -291,14 +360,71 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+}
+
+/* Клиенты */
+.client-section {
+    background-color: var(--basic-header-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    padding-bottom: 50px;
+}
+
+.client-ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.svg-client:hover,
+.svg-client:active {
+    fill: var(--color-hover);
+} 
+
+.client-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    
+}
+
+.client-li:hover,
+.client-li:active {
+    border-color: #2196F3;
 }
 
 /* Подвал */
+
+.container.footer {
+    display: flex;
+    align-items: baseline;
+}
+
 .first-footer {
     background-color: var(--basic-footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-first-div {
+    padding-right: 70px;
 }
 
 .header-logo-footer {
@@ -340,6 +466,32 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.p-footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-header-background-color);
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-social-ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-list-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
 }
 
 /* portfolio */
