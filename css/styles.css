@@ -30,9 +30,6 @@ img {
     max-width: 100%;
 }
 
-svg {
-    fill: var(--icon-color);
-}
 
 body {
     font-family: 'Roboto',sans-serif;
@@ -143,6 +140,11 @@ body {
     margin-right: 10px;
 }
 
+.link.contacts {
+    display: flex;
+    align-items: center;
+}
+
 .header-contacts-list {
     display: flex;
     padding: 0;
@@ -171,6 +173,14 @@ body {
     list-style: none;
 }
 
+.footer-link-icon{
+    color: var(--basic-header-background-color);
+    background-color: var(--color-hover);
+}
+
+.icon-footer-social {
+    color: inherit;
+}
 
 /* Основной блок */
 .container.order {
@@ -306,20 +316,48 @@ body {
     gap: 10px;
 }
 
-.style-list-li {
+.style-list-a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--primery-text-white);
     width: 44px;
     height: 44px;
-    margin-bottom: 16px;
+    border-radius: 50%;
+    color: var(--icon-color);
+    margin-bottom: 30px;
 }
 
-.style-list-li:hover,
-.style-list-li:active {
+.instagram {
+    fill: currentColor;
+}
+.twitter {
+    fill: currentColor;
+}
+.facebook {
+    fill: currentColor;
+}
+.linkedin {
+    fill: currentColor;
+}
+
+.style-list-a:hover,
+.style-list-a:active {
+    color: var(--white-text-color);
     background-color: var(--color-hover);
     border-radius: 50%;
 }
+
+.test1:hover {
+    fill: var(--white-text-color)
+}
+
+/* .style-list-a:hover,
+.style-list-a:active {
+    color: var(--white-text-color);
+    background-color: var(--color-hover);
+    border-radius: 50%;
+} */
 
 .main-work-list {
     display: flex;
@@ -388,12 +426,8 @@ body {
     gap: 30px;
 }
 
-.svg-client:hover,
-.svg-client:active {
-    fill: var(--color-hover);
-} 
 
-.client-li {
+.client-a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,12 +436,17 @@ body {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: #f5f5f5;
-    
+    color:var(--icon-color)
 }
 
-.client-li:hover,
-.client-li:active {
-    border-color: #2196F3;
+.client-a:hover,
+.client-a:active {
+    border-color: var(--color-hover);
+    color: var(--color-hover);
+}
+
+.svg-client {
+    fill: currentColor;
 }
 
 /* Подвал */
@@ -484,16 +523,27 @@ body {
 .footer-social-ul {
     display: flex;
     gap: 10px;
+    list-style: none;
 }
 
-.footer-list-li {
+.footer-list-a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
+.footer-list-a:hover,
+.footer-list-a:active {
+    background-color: var(--color-hover);
+}
+
+.icon-footer-social {
+    fill: var(--white-text-color);
+}
 /* portfolio */
 
 .main-work-portfolio {
@@ -551,6 +601,16 @@ body {
 
 .style-work-list:nth-child(n+4) {
     margin-top: 30px;
+}
+
+.link-work {
+    display: block;
+    text-decoration: none;
+}
+
+.link-work:hover,
+.link-work:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-border-box {
