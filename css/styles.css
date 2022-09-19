@@ -125,7 +125,6 @@ body {
 }
 
 .icon-tel {
-    box-sizing: border-box;
     width: 10px;
     height: 16px;
     fill: currentColor;
@@ -133,7 +132,6 @@ body {
 }
 
 .icon-mail {
-    box-sizing: border-box;
     width: 16px;
     height: 12px;
     fill: currentColor;
@@ -183,19 +181,16 @@ body {
 }
 
 /* Основной блок */
-.container.order {
-    width: 1600px;
-    height: 600px;
-    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/preview.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .main-order {
-
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/preview.jpg);
+    background-position: center;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-order-h1 {
@@ -226,6 +221,11 @@ body {
     padding: 10px 32px;
     border: none;
 }
+
+/* .main-order-button:hover,
+.main-order-button:active {
+    
+} */
 
 .style-list {
     list-style: none;
@@ -264,6 +264,7 @@ body {
 
 .main-better-h2,
 .hidden-h1 {
+    margin: 0;
     display: none;
 }
 
@@ -325,7 +326,6 @@ body {
     height: 44px;
     border-radius: 50%;
     color: var(--icon-color);
-    margin-bottom: 30px;
 }
 
 .instagram {
@@ -345,7 +345,6 @@ body {
 .style-list-a:active {
     color: var(--white-text-color);
     background-color: var(--color-hover);
-    border-radius: 50%;
 }
 
 .test1:hover {
@@ -388,7 +387,6 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    margin-top: 30px;
 }
 
 .main-people-p {
@@ -401,23 +399,23 @@ body {
     margin-bottom: 16px;
 }
 
+.person-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* Клиенты */
 .client-section {
-    background-color: var(--basic-header-background-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .client-h2 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.66;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .client-ul {
@@ -435,7 +433,6 @@ body {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    background-color: #f5f5f5;
     color:var(--icon-color)
 }
 
@@ -463,7 +460,7 @@ body {
 }
 
 .footer-first-div {
-    padding-right: 70px;
+    margin-right: 70px;
 }
 
 .header-logo-footer {
@@ -508,15 +505,10 @@ body {
 }
 
 .p-footer {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
-    color: var(--basic-header-background-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-social-ul {
