@@ -125,15 +125,11 @@ body {
 }
 
 .icon-tel {
-    width: 10px;
-    height: 16px;
     fill: currentColor;
     margin-right: 10px;
 }
 
 .icon-mail {
-    width: 16px;
-    height: 12px;
     fill: currentColor;
     margin-right: 10px;
 }
@@ -186,6 +182,8 @@ body {
     min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/preview.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -222,10 +220,10 @@ body {
     border: none;
 }
 
-/* .main-order-button:hover,
+.main-order-button:hover,
 .main-order-button:active {
-    
-} */
+    background-color: #188CE8;
+} 
 
 .style-list {
     list-style: none;
@@ -565,7 +563,8 @@ body {
 .link-filter:focus,
 .link-filter:active {
     background-color: var(--color-hover);
-    color: var(--white-text-color)
+    color: var(--white-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-filter-list {
